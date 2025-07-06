@@ -118,11 +118,11 @@
         background-color: #555;
         color: #fff;
     }
-    @media (min-width: 320px) {
-
     @media (min-width: 768px) {
-
-    @media (min-width: 1200px) {
+    header {
+        flex-direction: colum;
+        width: 100%
+    }
     .nav-menu {
         list-style: none;
         display: flex;
@@ -251,8 +251,15 @@
         transform: scale(1.1);
         transition: all 0.3s ease;
     }
+media (min-width: 320px) {
+  .product {
+    flex: 1 1 100%;
+  }
 }
-}
+@media (min-width: 1200px) {
+  .product {
+    flex: 1 1 30%;
+  }
 }
 
     </style>
